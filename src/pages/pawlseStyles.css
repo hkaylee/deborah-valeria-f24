@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  
+  input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    margin-right: 10px;
+  }
+  
+  button {
+    background-color: #007bff; /* blue */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* darker blue */
+  }
+  
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+
+  .breed-image {
+    width: 48px; /* Tailwind w-12 is equivalent to 48px */
+    height: 48px; /* Tailwind h-12 is equivalent to 48px */
+    display: inline-block; /* Tailwind inline-block */
+    margin-right: 0.5rem; /* Tailwind mr-2 is equivalent to 0.5rem (8px) */
+  }
+
+  .hero {
+    display: flex;
+    height: 150vh;
+    background-size: 100%;
+    background-image: url('/images/dogs-sunglasses.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.content h1 {
+  font-size: 56px;
+  font-weight: bolder;
+  color: green;
+}
