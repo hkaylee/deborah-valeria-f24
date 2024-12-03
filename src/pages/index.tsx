@@ -9,10 +9,18 @@ import Link from 'next/link';
 import Navbar from './components/Navbar';
 
 
-  const IndexPage = () => {
-    return (
+
+import Head from 'next/head';
+
+const IndexPage = () => {
+  return (
     <>
-      
+      <Head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto+Slab:wght@700&display=swap"
+          rel="stylesheet"
+        />
+      </Head>
       <Script id="chatling-config" strategy="afterInteractive">
         {`window.chtlConfig = { chatbotId: "7362981259" };`}
       </Script>
@@ -25,21 +33,13 @@ import Navbar from './components/Navbar';
 
       <Navbar />
 
-      <div className="hero "> 
-      <div className="content">
-        <h1> Keep your pets' tails wagging</h1>
-        
+      <div className="hero"> 
+        <div className="content">
+          <h1>Check your Pawlse</h1>
+        </div>
       </div>
-      
-      </div>
-      
-
-      </>
-    )
-  }
-
-      
-      
-
+    </>
+  );
+};
 
 export default IndexPage;

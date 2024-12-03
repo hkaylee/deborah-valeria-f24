@@ -1,9 +1,16 @@
-body {
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* body {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
     margin: 0;
     padding: 20px;
-  }
+  } */
   
   
   input {
@@ -39,13 +46,15 @@ body {
 
   .hero {
     display: flex;
-    height: 150vh;
-    background-size: 100%;
+    height: 100vh; /* Ensures the section takes up the full viewport height */
+    background-size: cover; /* Scales the image to cover the entire section */
     background-image: url('/images/dogs-sunglasses.png');
     background-repeat: no-repeat;
-    width: 100%;
-    
-}
+    background-position: center; /* Centers the background image */
+    width: 100vw; /* Ensures it spans the full width of the viewport */
+    overflow: hidden; /* Prevents scrolling caused by the background */
+  }
+  
 
 .content {
   display: flex;
@@ -64,3 +73,89 @@ body {
   font-weight: bolder;
   color: green;
 }
+
+.hero h1 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 4rem;
+  font-weight: 700; /* Bold weight */
+  color: #4CAF50; /* Green */
+  /* text-transform: uppercase; */
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* General Page Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.page-container {
+  padding: 20px;
+}
+
+.content-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Header Styles */
+.page-header h1 {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+/* Form Styles */
+.forms-section h2 {
+  color: #4CAF50;
+  margin-bottom: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+form input, form select, form button {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* Data Display Styles */
+.data-section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.data-section li {
+  margin-bottom: 10px;
+}
+
+/* Chart Section */
+.chart-section {
+  text-align: center;
+}
+
+.chart-section h3 {
+  color: #FF5722;
+}
+
